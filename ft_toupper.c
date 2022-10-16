@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brcaetan <brcaetan@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/09 14:57:28 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/08/09 14:57:42 by brcaetan         ###   ########.fr       */
+/*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
+/*   Updated: 2022/10/16 17:57:21 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@ int	ft_toupper(int c)
 	unsigned int	chr;
 
 	chr = c;
-	if (chr >= 'A' && chr <= 'Z')
+	if (chr >= 'a' && chr <= 'z')
 	{
-		chr += 32;
+		chr -= 32;
 		return (chr);
 	}
 	return (0);

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brcaetan <brcaetan@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/09 14:19:36 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/08/09 14:43:57 by brcaetan         ###   ########.fr       */
+/*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
+/*   Updated: 2022/10/16 17:57:21 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_tolower(int c)
 	chr = c;
 	if (chr >= 'A' && chr <= 'Z')
 	{
-		chr -= 32;
+		chr += 32;
 		return (chr);
 	}
 	return (0);

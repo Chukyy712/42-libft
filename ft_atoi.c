@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brcaetan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: brcaetan <brcaetan@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/30 22:51:51 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/08/06 09:09:50 by brcaetan         ###   ########.fr       */
+/*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
+/*   Updated: 2022/10/16 17:57:21 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sgn;

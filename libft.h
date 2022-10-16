@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brcaetan <brcaetan@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/10 19:19:38 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/08/17 16:15:21 by brcaetan         ###   ########.fr       */
+/*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
+/*   Updated: 2022/10/16 17:57:21 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef LIBFT_H
+#ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stdlib.h>
@@ -18,16 +18,26 @@
 # include <string.h>
 # include <stdio.h>
 
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}				t_list;
-
 int		ft_atoi(const char *str);
 
-char	*ft_strncpy(char *dest, const char *src, size_t len);
+int		ft_isalpha(int c);
+
+int		ft_ascii(int c);
+
+int	 	ft_isdigit(int c);
+
+int 		ft_isprint(int c);
+
+int		ft_isalnum(int c);
+
+char		*ft_strchr(const char *str, int c)
 
 size_t	ft_strlen(const char *str);
 
-#end if
+char		*ft_strncpy(char *dest, const char *src, size_t len);
+
+int	ft_tolower(int c)
+
+int	ft_toupper(int c)
+
+#endif
