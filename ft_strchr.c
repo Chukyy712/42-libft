@@ -16,10 +16,15 @@ char	*ft_strchr(const char *str, int c)
 {
 	int	i;
 
-	i = 0;
-	if (c == '\0')
+	i = -1;
+	if (!str)
+		return (NULL);
+	while (str[++i])
+	{	
+		if (str[i] == c)
+			return ((char *)&str[i]);
+	}
+	if (str[i] == c)
 		return ((char *)&str[i]);
-	while (str[i] != '\0' && str[i] != c)
-		i++;
-	return ((char *)&str[i]);
+	return (NULL);
 }
