@@ -12,13 +12,10 @@
 
 int	ft_tolower(int c)
 {
-	unsigned int	chr;
-
-	chr = c;
-	if (chr >= 'A' && chr <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
-		chr += 32;
-		return (chr);
+		c += 32;
+		return (c);
 	}
-	return (0);
+	return (c);
 }
