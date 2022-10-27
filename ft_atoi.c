@@ -12,9 +12,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sgn;
-	int	res;
+	long int	i;
+	long int	sgn;
+	long int	res;
 
 	res = 0;
 	sgn = 1;
