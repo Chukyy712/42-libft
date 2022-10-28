@@ -15,7 +15,7 @@ NAME = libft.a
 
 #Compiler + Flags 
 # -I (include) Specifies a directory dir to search for included makefiles.
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
@@ -44,8 +44,6 @@ fclean:	clean
 			$(RM) $(NAME)
 
 re:	fclean $(NAME)
-
-
 
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
