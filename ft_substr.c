@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brcaetan <brcaetan@student.42lisboa.com>   +#+  +:+       +#+        */
+/*   By: brcaetan <brcaetan@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/10/16 17:57:18 by brcaetan          #+#    #+#             */
+/*   Updated: 2022/11/03 15:00:08 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
-//The string from which to create the substring.
-//start: The start index of the substring in the string ’s’.
-//len: The maximum length of the substring.
-
 	size_t	i;
+	char	*substr;
 
-	while ()
-
-// Return (the substring ||NULL if the allocation fails)
+	i = -1;
+	if (!str)
+		return (NULL);
+	if (start >= ft_strlen(str))
+		return (ft_strdup(""));
+	substr = (char *) malloc(len + 1);
+	if (!substr)
+		return (NULL);
+	while (++i < len)
+		substr[i] = str[start + i];
+	substr[i] = '\0';
+	return (substr);
 }
