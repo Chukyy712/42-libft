@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
+/*   By: brcaetan <brcaetan@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 15:27:06 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/07 12:58:25 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/07 19:09:56 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	**ft_split(char const *src, char c)
 	int		wc;
 	char	**str;
 
+	if (!src)
+		return (NULL);
 	wc = ft_wc((char *)src, c);
 	str = (char **) malloc(sizeof(char *) * (wc + 1));
 	if (!str)
@@ -52,6 +54,6 @@ char	**ft_split(char const *src, char c)
 			i++;
 		str[j++] = ft_substr(src, k, i - k);
 	}
-	str[wc] = 0;	
+	str[wc] = 0;
 	return (str);
 }
