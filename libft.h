@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brcaetan <brcaetan@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/03 15:04:39 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/07 12:59:26 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,11 @@ size_t		ft_strlcat(char *d, const char *s, size_t size);
 char		*ft_substr(char const *str, unsigned int start, size_t len);
 
 char		*ft_strjoin(char const *str1, char const *str2);
+
+char		*ft_strtrim(char const *str, char const *set);
+
+char		**ft_split(char const *src, char c);
+
+char		*ft_itoa(int n);
 
 #endif

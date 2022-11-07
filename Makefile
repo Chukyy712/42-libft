@@ -3,14 +3,13 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: brcaetan <brcaetan@student.42lisboa.com>   +#+  +:+       +#+         #
+#    By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/17 14:47:34 by brcaetan          #+#    #+#              #
-#    Updated: 2022/08/17 16:11:52 by brcaetan         ###   ########.fr        #
+#    Created: 2022/11/07 12:59:32 by brcaetan          #+#    #+#              #
+#    Updated: 2022/11/07 12:59:47 by brcaetan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#Name of the project
 NAME = libft.a
 
 #Compiler + Flags 
