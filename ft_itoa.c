@@ -35,8 +35,8 @@ char	*ft_itoa(int n)
 
 	if (n == 0)
 		return ("0");
-	len = nlen(n);
 	num = n;
+	len = nlen(n);
 	str = malloc(len + 1);
 	if (!str)
 		return (NULL);
