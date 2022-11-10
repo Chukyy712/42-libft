@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brcaetan <brcaetan@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/08 20:28:15 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:29:53 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,31 +18,37 @@
 # include <string.h>
 # include <stdio.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 int			ft_atoi(const char *str);
 
 int			ft_isalpha(int c);
 
-int	    	ft_isascii(int c);
+int			ft_isascii(int c);
 
-int	    	ft_isdigit(int c);
+int			ft_isdigit(int c);
 
-int         ft_isprint(int c);
+int			ft_isprint(int c);
 
-int	    	ft_isalnum(int c);
+int			ft_isalnum(int c);
 
 char		*ft_strchr(const char *str, int c);
 
-size_t      ft_strlen(const char *str);
+size_t		ft_strlen(const char *str);
 
 char		*ft_strncpy(char *dest, const char *src, size_t len);
 
 int			ft_tolower(int c);
 
-int	        ft_toupper(int c);
+int			ft_toupper(int c);
 
 char		*ft_strdup(const char *s);
 
-size_t	    ft_strlcpy(char *dest, const char *src, size_t len);
+size_t		ft_strlcpy(char *dest, const char *src, size_t len);
 
 void		ft_bzero(void *str, size_t n);
 
@@ -54,7 +60,7 @@ void		*ft_memset(void *s, int c, size_t n);
 
 void		*ft_memmove(void *dest, const void *src, size_t n);
 
-void 		*ft_memchr(const void *src, int c, size_t n);
+void		*ft_memchr(const void *src, int c, size_t n);
 
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 
@@ -85,5 +91,7 @@ void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *str, int fd);
 
 void		ft_putendl_fd(char *str, int fd);
+
+void		ft_putnbr_fd(int nb, int fd);
 
 #endif

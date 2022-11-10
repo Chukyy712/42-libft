@@ -6,13 +6,11 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/07 12:57:46 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:03:04 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	return (c >= '0' && c <= '9');
 }
