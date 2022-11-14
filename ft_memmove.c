@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/07 12:58:16 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/13 01:24:18 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*strs;
 	unsigned char	*strd;
 
-	i = -1;
 	strd = (unsigned char *)dest;
 	strs = (unsigned char *)src;
 	if (!strd && !strs)
-		return (0);
+		return (NULL);
 	if (strd > strs)
 	{
 		while (n--)
@@ -30,6 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
+		i = -1;
 		while (++i < n)
 			strd[i] = strs[i];
 	}
