@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/14 12:26:46 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/14 23:01:18 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,15 @@ void				ft_putstr_fd(char *str, int fd);
 void				ft_putendl_fd(char *str, int fd);
 
 void				ft_putnbr_fd(int nb, int fd);
+
+t_list				*ft_lstnew(void *content);
+
+void				ft_lstadd_front(t_list **lst, t_list *new);
+
+int 				ft_lstsize(t_list *lst);
+
+t_list				*ft_lstlast(t_list *lst);
+
+void				ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif
