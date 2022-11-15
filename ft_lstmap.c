@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:20:29 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/15 22:01:35 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/15 22:04:01 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			return (NULL);
 		}
 		ft_lstadd_back(&new, temp);
-		lst = lst->content;
+		lst = lst->next;
 	}
 	return (new);
 }
