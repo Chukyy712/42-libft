@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/07 12:59:10 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:42:29 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	i = -1;
 	if (!str)
 		return (NULL);
-	if (start >= ft_strlen(str))
+	if (start > ft_strlen(str))
 		return (ft_strdup(""));
 	substr = (char *) malloc(len + 1);
 	if (!substr)

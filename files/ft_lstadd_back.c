@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 22:29:44 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/14 23:18:19 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:12:04 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	back = ft_lstlast(*lst);
 	back->next = new;
-	new->next = NULL;
 }
