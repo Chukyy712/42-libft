@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:57:03 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/16 10:01:23 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/16 18:58:44 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_itoa(int n)
 	char	*str;
 
 	if (n == 0)
-		return ("0");
+		return (ft_strdup("0"));
 	num = n;
 	len = nlen(n);
 	str = malloc(len + 1);

@@ -6,13 +6,11 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:57:16 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/07 12:57:53 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/16 19:15:15 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	return (c >= 32 && c <= 126);
 }

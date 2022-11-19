@@ -6,7 +6,7 @@
 /*   By: brcaetan <brcaetan@42lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:14:56 by brcaetan          #+#    #+#             */
-/*   Updated: 2022/11/07 12:59:06 by brcaetan         ###   ########.fr       */
+/*   Updated: 2022/11/16 14:16:25 by brcaetan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strtrim(char const *str, char const *set)
 
 	if (!str || !set)
 		return (NULL);
-	i = 0;
 	len = ft_strlen(str);
+	i = 0;
 	while (str[i] && ft_strchr(set, str[i]))
 		i++;
 	while (len > i && ft_strchr(set, str[len]))
